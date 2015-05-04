@@ -133,7 +133,7 @@
                     <navigationItem key="navigationItem" title="Passenger Login" id="hc3-rh-VNH">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="iG4-sl-iit">
                             <connections>
-                                <segue destination="tkK-dq-ysN" kind="modal" id="RnG-UI-tqH"/>
+                                <segue destination="tkK-dq-ysN" kind="push" id="RnG-UI-tqH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -184,6 +184,7 @@
         <scene sceneID="bPR-se-oXL">
             <objects>
                 <navigationController id="tkK-dq-ysN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xSE-sX-tFQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5nA-AO-H3n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -237,6 +238,7 @@
         <scene sceneID="nHr-iW-051">
             <objects>
                 <navigationController id="6Mv-Gz-7Ps" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gKS-vC-4Y8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zVA-CM-mBj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -315,7 +317,7 @@
                     <navigationItem key="navigationItem" title="Conductor Login" id="Wke-kY-y2c">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="mqy-x9-2BK">
                             <connections>
-                                <segue destination="6Mv-Gz-7Ps" kind="modal" id="KE2-Au-wOF"/>
+                                <segue destination="6Mv-Gz-7Ps" kind="push" id="KE2-Au-wOF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -391,7 +393,7 @@
                     <navigationItem key="navigationItem" title="Staff Login" id="3Rt-5G-B2D">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="lQD-52-GNW">
                             <connections>
-                                <segue destination="9cI-YD-Id2" kind="modal" id="gVX-4L-LLQ"/>
+                                <segue destination="9cI-YD-Id2" kind="push" id="gVX-4L-LLQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -442,6 +444,7 @@
         <scene sceneID="PBI-hw-pAZ">
             <objects>
                 <navigationController id="9cI-YD-Id2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6Pi-9t-NX5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mlo-Uc-e16">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
