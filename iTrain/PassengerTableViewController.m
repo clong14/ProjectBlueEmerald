@@ -15,7 +15,7 @@
 {
     [super viewDidLoad];
     // Initialize table data
-    tableData = [NSArray arrayWithObjects:@"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets", x`nil];
+    tableData = [NSArray arrayWithObjects:@"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets", nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
