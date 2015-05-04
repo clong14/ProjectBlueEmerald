@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4DDB0322-5389-4885-BF24-1513EDFA5FDC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iTrain</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BED0DC7FB85C12ED2705A123F292F8DE7A735805</key>
+		<string>github.com:clong14/ProjectBlueEmerald.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iTrain.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BED0DC7FB85C12ED2705A123F292F8DE7A735805</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:clong14/ProjectBlueEmerald.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BED0DC7FB85C12ED2705A123F292F8DE7A735805</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BED0DC7FB85C12ED2705A123F292F8DE7A735805</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iTrain</string>
+		</dict>
+	</array>
+</dict>
+</plist>
