@@ -19,7 +19,7 @@
 - (void)loadView{
     
     [super loadView];
-    self.passengerOptions = {"My Trips", "Train Schedules", "Check In", "Purchase Tickets"};
+    self.passengerOptions = [[NSArray alloc] initWithObjects: @"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets"];
 
 }
 
