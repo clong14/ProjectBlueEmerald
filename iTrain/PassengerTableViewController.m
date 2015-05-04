@@ -7,27 +7,53 @@
 //
 
 #import "PassengerTableViewController.h"
-
-@implementation PassengerTableViewController
-
-- (id)init{
-    
-    PassengerTableViewController *passvc = [[PassengerTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    return passvc;
+@implementation PassengerTableViewController{
+    NSArray *tableData;
 }
 
-- (void)loadView{
-    
-    [super loadView];
-    self.passengerOptions = [[NSArray alloc] initWithObjects: @"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets"];
-
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Initialize table data
+    tableData = [NSArray arrayWithObjects:@"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets", x`nil];
 }
 
--(NSInteger) countOfPassengerOptions{
-    
-    return 4;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [tableData count];
 }
 
-
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    }
+    
+    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    return cell;
+}
 
 @end
+//@implementation PassengerTableViewController
+//
+//- (id)init{
+//    
+//    PassengerTableViewController *passvc = [[PassengerTableViewController alloc] initWithStyle:UITableViewStylePlain];
+//    return passvc;
+//}
+//
+//- (void)loadView{
+//    
+//    [super loadView];
+//    self.passengerOptions = [[NSArray alloc] initWithObjects: @"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets"];
+//
+//}
+//
+//-(NSInteger) countOfPassengerOptions{
+//    
+//    return 4;
+//}
