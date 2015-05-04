@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-@import UIKit;
+// @import UIKit;
+#import <UIKit/UIKit.h>
 
-@interface PassengerTableViewController : UITableViewController
+// @interface PassengerTableViewController : UITableViewController
+@interface PassengerTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic) NSArray *passengerOptions;
 @property (nonatomic, retain) UITableView *tableView;
