@@ -133,7 +133,7 @@
                     <navigationItem key="navigationItem" title="Passenger Login" id="hc3-rh-VNH">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="iG4-sl-iit">
                             <connections>
-                                <segue destination="tkK-dq-ysN" kind="push" id="RnG-UI-tqH"/>
+                                <segue destination="hPt-kh-gsO" kind="push" id="yfr-lp-EYa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -178,24 +178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csa-n8-erT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="-381"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bPR-se-oXL">
-            <objects>
-                <navigationController id="tkK-dq-ysN" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xSE-sX-tFQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5nA-AO-H3n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="hPt-kh-gsO" kind="relationship" relationship="rootViewController" id="SYG-cO-gGp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kaJ-J2-zvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1484" y="-337"/>
+            <point key="canvasLocation" x="1510" y="-283"/>
         </scene>
         <!--Conductor Home-->
         <scene sceneID="Mef-EI-uIv">
@@ -232,24 +215,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBB-7u-GL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2213.5" y="484.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="nHr-iW-051">
-            <objects>
-                <navigationController id="6Mv-Gz-7Ps" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="gKS-vC-4Y8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zVA-CM-mBj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="bw8-Ha-gX3" kind="relationship" relationship="rootViewController" id="eKp-ZZ-kQ1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NpR-Cx-EgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1537.5" y="496.5"/>
+            <point key="canvasLocation" x="1499" y="435"/>
         </scene>
         <!--Conductor Login-->
         <scene sceneID="RDW-yl-EY0">
@@ -317,7 +283,7 @@
                     <navigationItem key="navigationItem" title="Conductor Login" id="Wke-kY-y2c">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="mqy-x9-2BK">
                             <connections>
-                                <segue destination="6Mv-Gz-7Ps" kind="push" id="KE2-Au-wOF"/>
+                                <segue destination="bw8-Ha-gX3" kind="push" id="dgZ-KF-sR3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -393,7 +359,7 @@
                     <navigationItem key="navigationItem" title="Staff Login" id="3Rt-5G-B2D">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="lQD-52-GNW">
                             <connections>
-                                <segue destination="9cI-YD-Id2" kind="push" id="gVX-4L-LLQ"/>
+                                <segue destination="IhY-CO-vFZ" kind="push" id="K7q-F0-JxI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -438,24 +404,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZK-hR-quX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241" y="1363"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="PBI-hw-pAZ">
-            <objects>
-                <navigationController id="9cI-YD-Id2" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="6Pi-9t-NX5"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mlo-Uc-e16">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="IhY-CO-vFZ" kind="relationship" relationship="rootViewController" id="O79-U1-RkI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dc8-yn-aTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1548" y="1355"/>
+            <point key="canvasLocation" x="1471" y="1284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fKo-Tt-cuU">
