@@ -19,7 +19,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="56V-Px-Sat" kind="modal" id="YYl-hn-q8p"/>
+                                    <segue destination="56V-Px-Sat" kind="push" id="wDR-ZL-p8M"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnc" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="45e-qW-Di5">
@@ -29,17 +29,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3Bl-SF-D4a" kind="modal" id="ERl-MY-Nor"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btns" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iWj-RK-lD2">
-                                <rect key="frame" x="133" y="409" width="109" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Staff">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZfU-JV-hli" kind="modal" id="UH5-ww-elT"/>
+                                    <segue destination="3Bl-SF-D4a" kind="push" id="7ap-dk-GDb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to iTrain!" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" id="0l2-wA-H9B">
@@ -56,6 +46,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btns" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iWj-RK-lD2">
+                                <rect key="frame" x="133" y="409" width="109" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Staff">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZfU-JV-hli" kind="push" id="hBP-hK-WSL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="391" y="371"/>
         </scene>
-        <!--View Controller-->
+        <!--Passenger Login-->
         <scene sceneID="qwp-ct-brN">
             <objects>
-                <viewController id="56V-Px-Sat" sceneMemberID="viewController">
+                <viewController title="Passenger Login" id="56V-Px-Sat" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H5f-gv-59Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,9 +113,6 @@
                                                 <state key="normal" title="Back">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="modal" id="PxM-PK-V4K"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="UCp-y8-mbS">
@@ -125,9 +122,6 @@
                                                 <state key="normal" title="Submit">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="tkK-dq-ysN" kind="modal" id="Vyt-6L-kZG"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -136,6 +130,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Passenger Login" id="hc3-rh-VNH">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="iG4-sl-iit">
+                            <connections>
+                                <segue destination="hPt-kh-gsO" kind="push" id="yfr-lp-EYa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8T-fy-LdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -147,15 +148,15 @@
             <objects>
                 <tableViewController id="hPt-kh-gsO" customClass="PassengerTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="lip-Ru-wwB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="qfi-k2-31c" style="IBUITableViewCellStyleDefault" id="EST-yC-52t">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EST-yC-52t" id="XDe-FR-1J3">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qfi-k2-31c">
@@ -177,23 +178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csa-n8-erT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="-143"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="bPR-se-oXL">
-            <objects>
-                <navigationController id="tkK-dq-ysN" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5nA-AO-H3n">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="hPt-kh-gsO" kind="relationship" relationship="rootViewController" id="SYG-cO-gGp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kaJ-J2-zvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1392" y="-143"/>
+            <point key="canvasLocation" x="1510" y="-283"/>
         </scene>
         <!--Conductor Home-->
         <scene sceneID="Mef-EI-uIv">
@@ -230,23 +215,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DBB-7u-GL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1930" y="485"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="nHr-iW-051">
-            <objects>
-                <navigationController id="6Mv-Gz-7Ps" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zVA-CM-mBj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="bw8-Ha-gX3" kind="relationship" relationship="rootViewController" id="eKp-ZZ-kQ1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NpR-Cx-EgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1390" y="485"/>
+            <point key="canvasLocation" x="1499" y="435"/>
         </scene>
         <!--Conductor Login-->
         <scene sceneID="RDW-yl-EY0">
@@ -289,14 +258,11 @@
                                     <navigationItem title="Conductor Login" id="b81-Rd-qfM">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="nha-Fb-bue">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y2y-fP-2RS">
-                                                <rect key="frame" x="39" y="63" width="35" height="30"/>
+                                                <rect key="frame" x="19" y="7" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back">
+                                                <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="modal" id="D50-xz-CNF"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="tjQ-ie-6Ww">
@@ -306,9 +272,6 @@
                                                 <state key="normal" title="Submit">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="6Mv-Gz-7Ps" kind="modal" id="miA-7Y-Wj4"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -318,7 +281,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Conductor Login" id="Wke-kY-y2c">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Submit" style="done" id="IDw-yw-BQF"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="mqy-x9-2BK">
+                            <connections>
+                                <segue destination="bw8-Ha-gX3" kind="push" id="dgZ-KF-sR3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -361,14 +328,11 @@
                                     <navigationItem title="Staff Login" id="kWn-rP-eNP">
                                         <barButtonItem key="leftBarButtonItem" style="plain" id="9SL-T0-bim">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B5w-Yd-dre">
-                                                <rect key="frame" x="48" y="77" width="35" height="30"/>
+                                                <rect key="frame" x="19" y="7" width="30" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back">
+                                                <state key="normal">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="modal" id="QM3-GV-j3o"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="n7u-oH-bU4">
@@ -378,9 +342,6 @@
                                                 <state key="normal" title="Submit">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <segue destination="9cI-YD-Id2" kind="modal" id="edf-oa-fsw"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -395,19 +356,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Staff Login" id="3Rt-5G-B2D"/>
+                    <navigationItem key="navigationItem" title="Staff Login" id="3Rt-5G-B2D">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="lQD-52-GNW">
+                            <connections>
+                                <segue destination="IhY-CO-vFZ" kind="push" id="K7q-F0-JxI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1O-3Z-bYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.5" y="1291.5"/>
+            <point key="canvasLocation" x="976.5" y="1333.5"/>
         </scene>
         <!--Staff Home-->
         <scene sceneID="vLZ-7y-vuv">
             <objects>
                 <tableViewController id="IhY-CO-vFZ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Cqc-ev-f2N">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -437,23 +404,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZK-hR-quX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="1141"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="PBI-hw-pAZ">
-            <objects>
-                <navigationController id="9cI-YD-Id2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mlo-Uc-e16">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="IhY-CO-vFZ" kind="relationship" relationship="rootViewController" id="O79-U1-RkI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dc8-yn-aTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1392" y="1141"/>
+            <point key="canvasLocation" x="1471" y="1284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fKo-Tt-cuU">
@@ -477,7 +428,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="QM3-GV-j3o"/>
-    </inferredMetricsTieBreakers>
 </document>
