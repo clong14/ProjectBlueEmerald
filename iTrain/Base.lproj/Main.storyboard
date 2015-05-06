@@ -151,9 +151,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="passenger_options" id="6kA-Nr-JGe">
+                                <rect key="frame" x="0.0" y="86" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6kA-Nr-JGe" id="kiv-ch-v4S">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="gqk-ar-hmw" kind="push" id="DbF-jN-56P"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="hPt-kh-gsO" id="dTS-iO-Fup"/>
-                            <outlet property="delegate" destination="hPt-kh-gsO" id="f1P-eo-YuW"/>
+                            <outlet property="dataSource" destination="hPt-kh-gsO" id="BHm-Uz-6o9"/>
+                            <outlet property="delegate" destination="hPt-kh-gsO" id="KQ8-T5-KK2"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Passenger Home" id="V2K-bh-i7e"/>
@@ -161,6 +174,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csa-n8-erT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1509.5" y="-283.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cMg-cp-DYw">
+            <objects>
+                <viewController id="gqk-ar-hmw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAt-FE-5Yf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HIN-Ls-deF">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qUb-OL-3tK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0l0-cL-y79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="-299"/>
         </scene>
         <!--Conductor Home-->
         <scene sceneID="Mef-EI-uIv">
