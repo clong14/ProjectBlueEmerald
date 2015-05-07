@@ -7,13 +7,17 @@
 //
 
 #import "PassengerTableViewController.h"
+#import "PassengerSelectionViewController.h"
 
 @interface PassengerTableViewController()
 
 @end
 
-@implementation PassengerTableViewController
-NSArray *passenger_options;
+@implementation PassengerTableViewController{
+    NSArray *passenger_options;
+}
+
+@synthesize tableView;
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -39,7 +43,16 @@ NSArray *passenger_options;
     }
     
     cell.textLabel.text = [passenger_options objectAtIndex:indexPath.row];
+    
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"show_selection_detail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PassengerSelectionViewController *destViewController = segue.destinationViewController;
+        destViewController.selection_name = [passenger_options objectAtIndex:indexPath.row];
+    }
 }
 
 @end

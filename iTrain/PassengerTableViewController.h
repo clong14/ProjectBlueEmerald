@@ -11,5 +11,6 @@
 
 @interface PassengerTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
