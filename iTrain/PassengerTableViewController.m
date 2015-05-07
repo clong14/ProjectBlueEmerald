@@ -7,53 +7,52 @@
 //
 
 #import "PassengerTableViewController.h"
+#import "PassengerSelectionViewController.h"
+
+@interface PassengerTableViewController()
+
+@end
+
 @implementation PassengerTableViewController{
-    NSArray *tableData;
+    NSArray *passenger_options;
 }
 
-- (void)viewDidLoad
-{
+@synthesize tableView;
+
+- (void)viewDidLoad{
     [super viewDidLoad];
-    // Initialize table data
-    tableData = [NSArray arrayWithObjects:@"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets", nil];
+    passenger_options = [NSArray arrayWithObjects:@"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets", nil];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [tableData count];
+- (void)didReceiveMemoryWarning{
+    [super didReceiveMemoryWarning];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [passenger_options count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *passenger_options_identifier = @"passenger_options";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:passenger_options_identifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[UITableViewCell alloc]
+                initWithStyle:UITableViewCellStyleDefault reuseIdentifier:passenger_options_identifier];
     }
     
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [passenger_options objectAtIndex:indexPath.row];
+    
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"show_selection_detail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PassengerSelectionViewController *destViewController = segue.destinationViewController;
+        destViewController.selection_name = [passenger_options objectAtIndex:indexPath.row];
+    }
+}
+
 @end
-//@implementation PassengerTableViewController
-//
-//- (id)init{
-//    
-//    PassengerTableViewController *passvc = [[PassengerTableViewController alloc] initWithStyle:UITableViewStylePlain];
-//    return passvc;
-//}
-//
-//- (void)loadView{
-//    
-//    [super loadView];
-//    self.passengerOptions = [[NSArray alloc] initWithObjects: @"My Trips", @"Train Schedules", @"Check In", @"Purchase Tickets"];
-//
-//}
-//
-//-(NSInteger) countOfPassengerOptions{
-//    
-//    return 4;
-//}

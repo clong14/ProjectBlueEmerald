@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8E618E1AFA9F19000576A0 /* PassengerSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E618D1AFA9F19000576A0 /* PassengerSelectionViewController.m */; };
 		7E43CF071AF5C84400DF8497 /* PassengerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E43CF061AF5C84400DF8497 /* PassengerTableViewController.m */; };
 		7E8688E41AE4E6C600CCEA89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8688E31AE4E6C600CCEA89 /* main.m */; };
 		7E8688E71AE4E6C600CCEA89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8688E61AE4E6C600CCEA89 /* AppDelegate.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D8E618C1AFA9F19000576A0 /* PassengerSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerSelectionViewController.h; sourceTree = "<group>"; };
+		5D8E618D1AFA9F19000576A0 /* PassengerSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerSelectionViewController.m; sourceTree = "<group>"; };
 		7E43CF051AF5C84400DF8497 /* PassengerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassengerTableViewController.h; sourceTree = "<group>"; };
 		7E43CF061AF5C84400DF8497 /* PassengerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassengerTableViewController.m; sourceTree = "<group>"; };
 		7E8688DE1AE4E6C600CCEA89 /* iTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +96,8 @@
 				7E8688EB1AE4E6C600CCEA89 /* Main.storyboard */,
 				7E8688EE1AE4E6C600CCEA89 /* Images.xcassets */,
 				7E8688F01AE4E6C600CCEA89 /* LaunchScreen.xib */,
+				5D8E618C1AFA9F19000576A0 /* PassengerSelectionViewController.h */,
+				5D8E618D1AFA9F19000576A0 /* PassengerSelectionViewController.m */,
 				7E8688E11AE4E6C600CCEA89 /* Supporting Files */,
 			);
 			path = iTrain;
@@ -227,6 +232,7 @@
 				7E43CF071AF5C84400DF8497 /* PassengerTableViewController.m in Sources */,
 				7E8688EA1AE4E6C600CCEA89 /* ViewController.m in Sources */,
 				7E8688E71AE4E6C600CCEA89 /* AppDelegate.m in Sources */,
+				5D8E618E1AFA9F19000576A0 /* PassengerSelectionViewController.m in Sources */,
 				7E8688E41AE4E6C600CCEA89 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
