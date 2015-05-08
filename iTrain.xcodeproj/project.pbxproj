@@ -21,6 +21,11 @@
 		91C11AE61AFC369600F681B2 /* passengerOption1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE51AFC369600F681B2 /* passengerOption1.xib */; };
 		91C11AE81AFC381600F681B2 /* passengerOption3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE71AFC381600F681B2 /* passengerOption3.xib */; };
 		91C11AEA1AFC383400F681B2 /* passengerOption2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE91AFC383400F681B2 /* passengerOption2.xib */; };
+		91C11AED1AFC84F800F681B2 /* ConductorTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C11AEC1AFC84F800F681B2 /* ConductorTableViewController.m */; };
+		91C11AF01AFC86B700F681B2 /* ConductorSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C11AEF1AFC86B700F681B2 /* ConductorSelectionViewController.m */; };
+		91C11AF41AFC87BF00F681B2 /* conductorOption0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AF31AFC87BF00F681B2 /* conductorOption0.xib */; };
+		91C11AF61AFC87D700F681B2 /* conductorOption1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AF51AFC87D700F681B2 /* conductorOption1.xib */; };
+		91C11AF81AFC87E700F681B2 /* conductorOption2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AF71AFC87E700F681B2 /* conductorOption2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,13 @@
 		91C11AE51AFC369600F681B2 /* passengerOption1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption1.xib; sourceTree = "<group>"; };
 		91C11AE71AFC381600F681B2 /* passengerOption3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption3.xib; sourceTree = "<group>"; };
 		91C11AE91AFC383400F681B2 /* passengerOption2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption2.xib; sourceTree = "<group>"; };
+		91C11AEB1AFC84F800F681B2 /* ConductorTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorTableViewController.h; sourceTree = "<group>"; };
+		91C11AEC1AFC84F800F681B2 /* ConductorTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConductorTableViewController.m; sourceTree = "<group>"; };
+		91C11AEE1AFC86B700F681B2 /* ConductorSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConductorSelectionViewController.h; sourceTree = "<group>"; };
+		91C11AEF1AFC86B700F681B2 /* ConductorSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConductorSelectionViewController.m; sourceTree = "<group>"; };
+		91C11AF31AFC87BF00F681B2 /* conductorOption0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = conductorOption0.xib; sourceTree = "<group>"; };
+		91C11AF51AFC87D700F681B2 /* conductorOption1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = conductorOption1.xib; sourceTree = "<group>"; };
+		91C11AF71AFC87E700F681B2 /* conductorOption2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = conductorOption2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,19 +112,13 @@
 			children = (
 				7E8688E51AE4E6C600CCEA89 /* AppDelegate.h */,
 				7E8688E61AE4E6C600CCEA89 /* AppDelegate.m */,
-				7E43CF051AF5C84400DF8497 /* PassengerTableViewController.h */,
-				7E43CF061AF5C84400DF8497 /* PassengerTableViewController.m */,
-				91C11AE71AFC381600F681B2 /* passengerOption3.xib */,
-				91C11AE91AFC383400F681B2 /* passengerOption2.xib */,
-				91C11AE51AFC369600F681B2 /* passengerOption1.xib */,
-				91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */,
+				91C11AF11AFC879D00F681B2 /* Conductor */,
+				91C11AF21AFC87A700F681B2 /* Passenger */,
 				7E8688E81AE4E6C600CCEA89 /* ViewController.h */,
 				7E8688E91AE4E6C600CCEA89 /* ViewController.m */,
 				7E8688EB1AE4E6C600CCEA89 /* Main.storyboard */,
 				7E8688EE1AE4E6C600CCEA89 /* Images.xcassets */,
 				7E8688F01AE4E6C600CCEA89 /* LaunchScreen.xib */,
-				5D8E618C1AFA9F19000576A0 /* PassengerSelectionViewController.h */,
-				5D8E618D1AFA9F19000576A0 /* PassengerSelectionViewController.m */,
 				7E8688E11AE4E6C600CCEA89 /* Supporting Files */,
 			);
 			path = iTrain;
@@ -142,6 +148,35 @@
 				7E8688FC1AE4E6C600CCEA89 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91C11AF11AFC879D00F681B2 /* Conductor */ = {
+			isa = PBXGroup;
+			children = (
+				91C11AEB1AFC84F800F681B2 /* ConductorTableViewController.h */,
+				91C11AEC1AFC84F800F681B2 /* ConductorTableViewController.m */,
+				91C11AEE1AFC86B700F681B2 /* ConductorSelectionViewController.h */,
+				91C11AEF1AFC86B700F681B2 /* ConductorSelectionViewController.m */,
+				91C11AF31AFC87BF00F681B2 /* conductorOption0.xib */,
+				91C11AF51AFC87D700F681B2 /* conductorOption1.xib */,
+				91C11AF71AFC87E700F681B2 /* conductorOption2.xib */,
+			);
+			name = Conductor;
+			sourceTree = "<group>";
+		};
+		91C11AF21AFC87A700F681B2 /* Passenger */ = {
+			isa = PBXGroup;
+			children = (
+				7E43CF051AF5C84400DF8497 /* PassengerTableViewController.h */,
+				7E43CF061AF5C84400DF8497 /* PassengerTableViewController.m */,
+				5D8E618C1AFA9F19000576A0 /* PassengerSelectionViewController.h */,
+				5D8E618D1AFA9F19000576A0 /* PassengerSelectionViewController.m */,
+				91C11AE71AFC381600F681B2 /* passengerOption3.xib */,
+				91C11AE91AFC383400F681B2 /* passengerOption2.xib */,
+				91C11AE51AFC369600F681B2 /* passengerOption1.xib */,
+				91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */,
+			);
+			name = Passenger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +262,12 @@
 				91C11AEA1AFC383400F681B2 /* passengerOption2.xib in Resources */,
 				7E8688ED1AE4E6C600CCEA89 /* Main.storyboard in Resources */,
 				91C11AE81AFC381600F681B2 /* passengerOption3.xib in Resources */,
+				91C11AF41AFC87BF00F681B2 /* conductorOption0.xib in Resources */,
+				91C11AF61AFC87D700F681B2 /* conductorOption1.xib in Resources */,
 				91C11AE21AFC2BD300F681B2 /* qrcode.29389826.png in Resources */,
 				7E8688F21AE4E6C600CCEA89 /* LaunchScreen.xib in Resources */,
 				7E8688EF1AE4E6C600CCEA89 /* Images.xcassets in Resources */,
+				91C11AF81AFC87E700F681B2 /* conductorOption2.xib in Resources */,
 				91C11AE41AFC2D6A00F681B2 /* passengerOption0.xib in Resources */,
 				91C11AE61AFC369600F681B2 /* passengerOption1.xib in Resources */,
 			);
@@ -253,7 +291,9 @@
 				7E8688EA1AE4E6C600CCEA89 /* ViewController.m in Sources */,
 				7E8688E71AE4E6C600CCEA89 /* AppDelegate.m in Sources */,
 				5D8E618E1AFA9F19000576A0 /* PassengerSelectionViewController.m in Sources */,
+				91C11AF01AFC86B700F681B2 /* ConductorSelectionViewController.m in Sources */,
 				7E8688E41AE4E6C600CCEA89 /* main.m in Sources */,
+				91C11AED1AFC84F800F681B2 /* ConductorTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
