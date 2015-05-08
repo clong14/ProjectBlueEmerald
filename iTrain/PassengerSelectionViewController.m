@@ -22,13 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    selection_label.text = selection_name;
+    //selection_label.text = selection_name;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self resignFirstResponder];
 }
 
 /*

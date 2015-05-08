@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Bon-ma-2qt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Bon-ma-2qt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--iTrain-->
@@ -159,9 +159,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="gqk-ar-hmw" kind="push" identifier="show_selection_detail" id="DbF-jN-56P"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -178,33 +175,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csa-n8-erT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1416.5" y="-459.5"/>
-        </scene>
-        <!--Passenger Selection View Controller-->
-        <scene sceneID="cMg-cp-DYw">
-            <objects>
-                <viewController id="gqk-ar-hmw" customClass="PassengerSelectionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GAt-FE-5Yf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HIN-Ls-deF">
-                                <rect key="frame" x="120" y="293" width="135" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="qUb-OL-3tK"/>
-                    <connections>
-                        <outlet property="selection_label" destination="HIN-Ls-deF" id="VEY-JQ-zzL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0l0-cL-y79" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1988.5" y="-630.5"/>
         </scene>
         <!--Conductor Home-->
         <scene sceneID="Mef-EI-uIv">

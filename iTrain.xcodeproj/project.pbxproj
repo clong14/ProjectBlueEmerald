@@ -16,6 +16,11 @@
 		7E8688EF1AE4E6C600CCEA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8688EE1AE4E6C600CCEA89 /* Images.xcassets */; };
 		7E8688F21AE4E6C600CCEA89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8688F01AE4E6C600CCEA89 /* LaunchScreen.xib */; };
 		7E8688FE1AE4E6C600CCEA89 /* iTrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8688FD1AE4E6C600CCEA89 /* iTrainTests.m */; };
+		91C11AE21AFC2BD300F681B2 /* qrcode.29389826.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE11AFC2BD300F681B2 /* qrcode.29389826.png */; };
+		91C11AE41AFC2D6A00F681B2 /* passengerOption0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */; };
+		91C11AE61AFC369600F681B2 /* passengerOption1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE51AFC369600F681B2 /* passengerOption1.xib */; };
+		91C11AE81AFC381600F681B2 /* passengerOption3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE71AFC381600F681B2 /* passengerOption3.xib */; };
+		91C11AEA1AFC383400F681B2 /* passengerOption2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE91AFC383400F681B2 /* passengerOption2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		7E8688F71AE4E6C600CCEA89 /* iTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8688FC1AE4E6C600CCEA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8688FD1AE4E6C600CCEA89 /* iTrainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTrainTests.m; sourceTree = "<group>"; };
+		91C11AE11AFC2BD300F681B2 /* qrcode.29389826.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qrcode.29389826.png; path = iTrain/Images.xcassets/qrcode.29389826.png; sourceTree = "<group>"; };
+		91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption0.xib; sourceTree = "<group>"; };
+		91C11AE51AFC369600F681B2 /* passengerOption1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption1.xib; sourceTree = "<group>"; };
+		91C11AE71AFC381600F681B2 /* passengerOption3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption3.xib; sourceTree = "<group>"; };
+		91C11AE91AFC383400F681B2 /* passengerOption2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +79,7 @@
 		7E8688D51AE4E6C500CCEA89 = {
 			isa = PBXGroup;
 			children = (
+				91C11AE11AFC2BD300F681B2 /* qrcode.29389826.png */,
 				7E8688E01AE4E6C600CCEA89 /* iTrain */,
 				7E8688FA1AE4E6C600CCEA89 /* iTrainTests */,
 				7E8688DF1AE4E6C600CCEA89 /* Products */,
@@ -91,6 +102,10 @@
 				7E8688E61AE4E6C600CCEA89 /* AppDelegate.m */,
 				7E43CF051AF5C84400DF8497 /* PassengerTableViewController.h */,
 				7E43CF061AF5C84400DF8497 /* PassengerTableViewController.m */,
+				91C11AE71AFC381600F681B2 /* passengerOption3.xib */,
+				91C11AE91AFC383400F681B2 /* passengerOption2.xib */,
+				91C11AE51AFC369600F681B2 /* passengerOption1.xib */,
+				91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */,
 				7E8688E81AE4E6C600CCEA89 /* ViewController.h */,
 				7E8688E91AE4E6C600CCEA89 /* ViewController.m */,
 				7E8688EB1AE4E6C600CCEA89 /* Main.storyboard */,
@@ -209,9 +224,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C11AEA1AFC383400F681B2 /* passengerOption2.xib in Resources */,
 				7E8688ED1AE4E6C600CCEA89 /* Main.storyboard in Resources */,
+				91C11AE81AFC381600F681B2 /* passengerOption3.xib in Resources */,
+				91C11AE21AFC2BD300F681B2 /* qrcode.29389826.png in Resources */,
 				7E8688F21AE4E6C600CCEA89 /* LaunchScreen.xib in Resources */,
 				7E8688EF1AE4E6C600CCEA89 /* Images.xcassets in Resources */,
+				91C11AE41AFC2D6A00F681B2 /* passengerOption0.xib in Resources */,
+				91C11AE61AFC369600F681B2 /* passengerOption1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

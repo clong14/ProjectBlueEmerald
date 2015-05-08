@@ -8,6 +8,7 @@
 
 #import "PassengerTableViewController.h"
 #import "PassengerSelectionViewController.h"
+@import UIKit;
 
 @interface PassengerTableViewController()
 
@@ -47,12 +48,52 @@
     return cell;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"show_selection_detail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        PassengerSelectionViewController *destViewController = segue.destinationViewController;
-        destViewController.selection_name = [passenger_options objectAtIndex:indexPath.row];
-    }
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    PassengerSelectionViewController *destViewController;
+//    
+//    if ([segue.identifier isEqualToString:@"show_selection_detail"]) {
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        NSLog(@"Index Clicked: %@ \n %lu", indexPath, (unsigned long)[indexPath indexAtPosition:1]);
+//        
+//        if((unsigned long)[indexPath indexAtPosition:1] == 0){
+//            destViewController = [[PassengerSelectionViewController alloc] initWithNibName:@"passengerOption0" bundle:nil];
+//        }
+//        
+//        destViewController = segue.destinationViewController;
+//        destViewController.selection_name = [passenger_options objectAtIndex:indexPath.row];
+//    }
+//}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    PassengerSelectionViewController *destViewController;
+    NSString *option = @"passengerOption";
+    NSString *optnum;
+    NSLog(@"Index Clicked: %lu", (long)indexPath.row);
+    
+    switch ((long)indexPath.row) {
+        case 0:
+            optnum = @"0";
+            break;
+        case 1:
+            optnum = @"1";
+            break;
+        case 2:
+            optnum = @"2";
+            break;
+        case 3:
+            optnum = @"3";
+            break;
+            
+        default:
+            optnum = @"0";
+            break;
+    };
+    
+    NSString *nextvc = [option stringByAppendingString:optnum];
+    NSLog(@"nextvc = %@", nextvc);
+    destViewController = [[PassengerSelectionViewController alloc] initWithNibName:nextvc bundle:nil];
+    [self.navigationController pushViewController:destViewController animated:YES];
 }
 
 @end

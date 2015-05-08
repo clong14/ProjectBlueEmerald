@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PassengerSelectionViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="ZSH-OH-ypQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Passenger Name" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzp-1l-jmK">
+                    <rect key="frame" x="235" y="378" width="131" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="0WP-cx-vKn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&lt;passenger name&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-LF-bzr">
+                    <rect key="frame" x="226" y="407" width="148" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="EgF-AN-fpP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ticket Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abO-TS-r2P">
+                    <rect key="frame" x="244" y="486" width="113" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="dfd-1f-TUj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qrcode.29389826.png" translatesAutoresizingMaskIntoConstraints="NO" id="JaU-nJ-Bdx">
+                    <rect key="frame" x="174" y="79" width="240" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="9b8-iY-kG8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="&lt;ticket number&gt;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZm-N5-r8c">
+                    <rect key="frame" x="237" y="524" width="126" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="KyE-dS-9ox"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZZm-N5-r8c" firstAttribute="centerX" secondItem="abO-TS-r2P" secondAttribute="centerX" id="G3O-Gb-rAK"/>
+                <constraint firstItem="JaU-nJ-Bdx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="UJp-mH-tLi"/>
+                <constraint firstItem="abO-TS-r2P" firstAttribute="centerX" secondItem="Mga-LF-bzr" secondAttribute="centerX" id="aD5-yG-0dg"/>
+                <constraint firstAttribute="centerXWithinMargins" secondItem="JaU-nJ-Bdx" secondAttribute="centerX" constant="-174" id="btZ-Cy-yOh"/>
+                <constraint firstItem="gzp-1l-jmK" firstAttribute="centerX" secondItem="Mga-LF-bzr" secondAttribute="centerX" id="jgw-FN-h6t"/>
+                <constraint firstAttribute="bottom" secondItem="ZZm-N5-r8c" secondAttribute="bottom" constant="53" id="kxO-AN-kS6"/>
+                <constraint firstItem="abO-TS-r2P" firstAttribute="top" secondItem="Mga-LF-bzr" secondAttribute="bottom" constant="55" id="mGS-DM-dcU"/>
+                <constraint firstItem="Mga-LF-bzr" firstAttribute="top" secondItem="gzp-1l-jmK" secondAttribute="bottom" constant="8" symbolic="YES" id="tJv-gB-6cJ"/>
+                <constraint firstItem="ZZm-N5-r8c" firstAttribute="top" secondItem="abO-TS-r2P" secondAttribute="bottom" constant="22" id="ulU-7e-yeW"/>
+                <constraint firstItem="gzp-1l-jmK" firstAttribute="centerX" secondItem="JaU-nJ-Bdx" secondAttribute="centerX" constant="174" id="xhl-mM-kiU"/>
+                <constraint firstItem="gzp-1l-jmK" firstAttribute="top" secondItem="JaU-nJ-Bdx" secondAttribute="bottom" constant="58" id="xkb-7A-PoW"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="qrcode.29389826.png" width="200" height="200"/>
+    </resources>
+</document>
