@@ -26,6 +26,11 @@
 		91C11AF41AFC87BF00F681B2 /* conductorOption0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AF31AFC87BF00F681B2 /* conductorOption0.xib */; };
 		91C11AF61AFC87D700F681B2 /* conductorOption1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AF51AFC87D700F681B2 /* conductorOption1.xib */; };
 		91C11AF81AFC87E700F681B2 /* conductorOption2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AF71AFC87E700F681B2 /* conductorOption2.xib */; };
+		91C11AFC1AFC89FA00F681B2 /* StaffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C11AFB1AFC89FA00F681B2 /* StaffTableViewController.m */; };
+		91C11AFF1AFC8AC600F681B2 /* StaffSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C11AFE1AFC8AC600F681B2 /* StaffSelectionViewController.m */; };
+		91C11B011AFC8B5F00F681B2 /* staffOption0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11B001AFC8B5F00F681B2 /* staffOption0.xib */; };
+		91C11B031AFC8B6900F681B2 /* staffOption1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11B021AFC8B6900F681B2 /* staffOption1.xib */; };
+		91C11B051AFC8B7300F681B2 /* staffOption2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11B041AFC8B7300F681B2 /* staffOption2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,13 @@
 		91C11AF31AFC87BF00F681B2 /* conductorOption0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = conductorOption0.xib; sourceTree = "<group>"; };
 		91C11AF51AFC87D700F681B2 /* conductorOption1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = conductorOption1.xib; sourceTree = "<group>"; };
 		91C11AF71AFC87E700F681B2 /* conductorOption2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = conductorOption2.xib; sourceTree = "<group>"; };
+		91C11AFA1AFC89FA00F681B2 /* StaffTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffTableViewController.h; sourceTree = "<group>"; };
+		91C11AFB1AFC89FA00F681B2 /* StaffTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffTableViewController.m; sourceTree = "<group>"; };
+		91C11AFD1AFC8AC600F681B2 /* StaffSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaffSelectionViewController.h; sourceTree = "<group>"; };
+		91C11AFE1AFC8AC600F681B2 /* StaffSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaffSelectionViewController.m; sourceTree = "<group>"; };
+		91C11B001AFC8B5F00F681B2 /* staffOption0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = staffOption0.xib; sourceTree = "<group>"; };
+		91C11B021AFC8B6900F681B2 /* staffOption1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = staffOption1.xib; sourceTree = "<group>"; };
+		91C11B041AFC8B7300F681B2 /* staffOption2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = staffOption2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +126,7 @@
 				7E8688E61AE4E6C600CCEA89 /* AppDelegate.m */,
 				91C11AF11AFC879D00F681B2 /* Conductor */,
 				91C11AF21AFC87A700F681B2 /* Passenger */,
+				91C11AF91AFC89DC00F681B2 /* Staff */,
 				7E8688E81AE4E6C600CCEA89 /* ViewController.h */,
 				7E8688E91AE4E6C600CCEA89 /* ViewController.m */,
 				7E8688EB1AE4E6C600CCEA89 /* Main.storyboard */,
@@ -177,6 +190,20 @@
 				91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */,
 			);
 			name = Passenger;
+			sourceTree = "<group>";
+		};
+		91C11AF91AFC89DC00F681B2 /* Staff */ = {
+			isa = PBXGroup;
+			children = (
+				91C11AFA1AFC89FA00F681B2 /* StaffTableViewController.h */,
+				91C11AFB1AFC89FA00F681B2 /* StaffTableViewController.m */,
+				91C11AFD1AFC8AC600F681B2 /* StaffSelectionViewController.h */,
+				91C11AFE1AFC8AC600F681B2 /* StaffSelectionViewController.m */,
+				91C11B001AFC8B5F00F681B2 /* staffOption0.xib */,
+				91C11B021AFC8B6900F681B2 /* staffOption1.xib */,
+				91C11B041AFC8B7300F681B2 /* staffOption2.xib */,
+			);
+			name = Staff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +288,11 @@
 			files = (
 				91C11AEA1AFC383400F681B2 /* passengerOption2.xib in Resources */,
 				7E8688ED1AE4E6C600CCEA89 /* Main.storyboard in Resources */,
+				91C11B011AFC8B5F00F681B2 /* staffOption0.xib in Resources */,
 				91C11AE81AFC381600F681B2 /* passengerOption3.xib in Resources */,
 				91C11AF41AFC87BF00F681B2 /* conductorOption0.xib in Resources */,
+				91C11B031AFC8B6900F681B2 /* staffOption1.xib in Resources */,
+				91C11B051AFC8B7300F681B2 /* staffOption2.xib in Resources */,
 				91C11AF61AFC87D700F681B2 /* conductorOption1.xib in Resources */,
 				91C11AE21AFC2BD300F681B2 /* qrcode.29389826.png in Resources */,
 				7E8688F21AE4E6C600CCEA89 /* LaunchScreen.xib in Resources */,
@@ -287,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C11AFC1AFC89FA00F681B2 /* StaffTableViewController.m in Sources */,
+				91C11AFF1AFC8AC600F681B2 /* StaffSelectionViewController.m in Sources */,
 				7E43CF071AF5C84400DF8497 /* PassengerTableViewController.m in Sources */,
 				7E8688EA1AE4E6C600CCEA89 /* ViewController.m in Sources */,
 				7E8688E71AE4E6C600CCEA89 /* AppDelegate.m in Sources */,
