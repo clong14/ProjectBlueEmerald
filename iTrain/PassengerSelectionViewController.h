@@ -12,4 +12,7 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *selection_label;
 @property (nonatomic, strong) NSString *selection_name;
+@property (nonatomic, weak) IBOutlet UITextField *txtUsername;
+@property (nonatomic, weak) IBOutlet UITextField *txtPassword;
+- (IBAction)signinClicked:(id)sender;
 @end
