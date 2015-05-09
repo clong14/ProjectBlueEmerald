@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-{   IBOutlet UIButton *btnp;
-    IBOutlet UIButton *btnc;
-    IBOutlet UIButton *btns;
+{   
 }
 
 @end

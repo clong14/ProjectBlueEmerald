@@ -18,7 +18,7 @@
     NSArray *passenger_options;
 }
 
-@synthesize tableView;
+
 
 - (void)viewDidLoad{
     [super viewDidLoad];
