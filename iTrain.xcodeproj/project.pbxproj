@@ -16,7 +16,6 @@
 		7E8688EF1AE4E6C600CCEA89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8688EE1AE4E6C600CCEA89 /* Images.xcassets */; };
 		7E8688F21AE4E6C600CCEA89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8688F01AE4E6C600CCEA89 /* LaunchScreen.xib */; };
 		7E8688FE1AE4E6C600CCEA89 /* iTrainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8688FD1AE4E6C600CCEA89 /* iTrainTests.m */; };
-		914B5E981AFD972200B93BFF /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 914B5E971AFD972200B93BFF /* libmysqlclient.a */; };
 		91C11AE21AFC2BD300F681B2 /* qrcode.29389826.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE11AFC2BD300F681B2 /* qrcode.29389826.png */; };
 		91C11AE41AFC2D6A00F681B2 /* passengerOption0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */; };
 		91C11AE61AFC369600F681B2 /* passengerOption1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91C11AE51AFC369600F681B2 /* passengerOption1.xib */; };
@@ -42,27 +41,6 @@
 			remoteGlobalIDString = 7E8688DD1AE4E6C600CCEA89;
 			remoteInfo = iTrain;
 		};
-		914B5E931AFD971100B93BFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 914B5E8E1AFD971100B93BFF /* mysql-connector-c.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7F64C2A01951DDCE000EB2FE;
-			remoteInfo = "mysql-connector-c";
-		};
-		914B5E951AFD971100B93BFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 914B5E8E1AFD971100B93BFF /* mysql-connector-c.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7F64C2C11951DDCF000EB2FE;
-			remoteInfo = "mysql-connector-cTests";
-		};
-		914B5E991AFD972C00B93BFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 914B5E8E1AFD971100B93BFF /* mysql-connector-c.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 7F64C29F1951DDCE000EB2FE;
-			remoteInfo = "mysql-connector-c";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -83,8 +61,6 @@
 		7E8688F71AE4E6C600CCEA89 /* iTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8688FC1AE4E6C600CCEA89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8688FD1AE4E6C600CCEA89 /* iTrainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTrainTests.m; sourceTree = "<group>"; };
-		914B5E8E1AFD971100B93BFF /* mysql-connector-c.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "mysql-connector-c.xcodeproj"; path = "../mysql-connector-c/Project Files/mysql-connector-c/mysql-connector-c.xcodeproj"; sourceTree = "<group>"; };
-		914B5E971AFD972200B93BFF /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmysqlclient.a; path = "../mysql-connector-c/Project Files/mysql-connector-c/mysql-connector-c/Sources/libmysqlclient.a"; sourceTree = "<group>"; };
 		91C11AE11AFC2BD300F681B2 /* qrcode.29389826.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = qrcode.29389826.png; path = iTrain/Images.xcassets/qrcode.29389826.png; sourceTree = "<group>"; };
 		91C11AE31AFC2D6A00F681B2 /* passengerOption0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption0.xib; sourceTree = "<group>"; };
 		91C11AE51AFC369600F681B2 /* passengerOption1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = passengerOption1.xib; sourceTree = "<group>"; };
@@ -111,7 +87,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914B5E981AFD972200B93BFF /* libmysqlclient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +103,6 @@
 		7E8688D51AE4E6C500CCEA89 = {
 			isa = PBXGroup;
 			children = (
-				914B5E971AFD972200B93BFF /* libmysqlclient.a */,
-				914B5E8E1AFD971100B93BFF /* mysql-connector-c.xcodeproj */,
 				91C11AE11AFC2BD300F681B2 /* qrcode.29389826.png */,
 				7E8688E01AE4E6C600CCEA89 /* iTrain */,
 				7E8688FA1AE4E6C600CCEA89 /* iTrainTests */,
@@ -190,15 +163,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		914B5E8F1AFD971100B93BFF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				914B5E941AFD971100B93BFF /* mysql-connector-c.app */,
-				914B5E961AFD971100B93BFF /* mysql-connector-cTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		91C11AF11AFC879D00F681B2 /* Conductor */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +220,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				914B5E9A1AFD972C00B93BFF /* PBXTargetDependency */,
 			);
 			name = iTrain;
 			productName = iTrain;
@@ -310,12 +273,6 @@
 			mainGroup = 7E8688D51AE4E6C500CCEA89;
 			productRefGroup = 7E8688DF1AE4E6C600CCEA89 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 914B5E8F1AFD971100B93BFF /* Products */;
-					ProjectRef = 914B5E8E1AFD971100B93BFF /* mysql-connector-c.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				7E8688DD1AE4E6C600CCEA89 /* iTrain */,
@@ -323,23 +280,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		914B5E941AFD971100B93BFF /* mysql-connector-c.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "mysql-connector-c.app";
-			remoteRef = 914B5E931AFD971100B93BFF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		914B5E961AFD971100B93BFF /* mysql-connector-cTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "mysql-connector-cTests.xctest";
-			remoteRef = 914B5E951AFD971100B93BFF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7E8688DC1AE4E6C600CCEA89 /* Resources */ = {
@@ -404,11 +344,6 @@
 			isa = PBXTargetDependency;
 			target = 7E8688DD1AE4E6C600CCEA89 /* iTrain */;
 			targetProxy = 7E8688F81AE4E6C600CCEA89 /* PBXContainerItemProxy */;
-		};
-		914B5E9A1AFD972C00B93BFF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "mysql-connector-c";
-			targetProxy = 914B5E991AFD972C00B93BFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

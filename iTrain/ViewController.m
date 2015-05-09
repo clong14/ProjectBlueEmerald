@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "mysql.h"
+// #import "mysql.h"
 
 @interface ViewController ()
 
@@ -19,20 +19,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    MYSQL *trainDB;
-    mysql_init(trainDB);
-    
-    const char *myHost = "67.169.34.164";
-    const char *myUser = "user";
-    const char *myPW = "p4sswurd";
-    //mysql -u user -p -h 67.169.34.164
-    
-    mysql_real_connect(trainDB, myHost, myUser, myPW, "iTrain", 0, NULL, 0);
-    
-    if(!mysql_query(trainDB, "SELECT * FROM Ride"))
-        NSLog(@"SUCCESS");
-    else
-        NSLog(@"Failed :(");
+//    MYSQL *trainDB;
+//    mysql_init(trainDB);
+//    
+//    const char *myHost = "67.169.34.164";
+//    const char *myUser = "user";
+//    const char *myPW = "p4sswurd";
+//    //mysql -u user -p -h 67.169.34.164
+//    
+//    mysql_real_connect(trainDB, myHost, myUser, myPW, "iTrain", 0, NULL, 0);
+//    
+//    if(!mysql_query(trainDB, "SELECT * FROM Ride"))
+//        NSLog(@"SUCCESS");
+//    else
+//        NSLog(@"Failed :(");
 }
 
 - (void)didReceiveMemoryWarning {

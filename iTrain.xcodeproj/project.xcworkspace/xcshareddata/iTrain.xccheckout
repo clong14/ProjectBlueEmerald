@@ -7,16 +7,20 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4DDB0322-5389-4885-BF24-1513EDFA5FDC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>iTrain</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>02CA20A543F00382E3495EF50B25419893902CA1</key>
+		<string>https://github.com/ketzusaka/mysql-connector-c.git</string>
 		<key>BED0DC7FB85C12ED2705A123F292F8DE7A735805</key>
 		<string>github.com:clong14/ProjectBlueEmerald.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iTrain.xcodeproj</string>
+	<string>iTrain.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>02CA20A543F00382E3495EF50B25419893902CA1</key>
+		<string>../../../mysql-connector-c</string>
 		<key>BED0DC7FB85C12ED2705A123F292F8DE7A735805</key>
 		<string>../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>BED0DC7FB85C12ED2705A123F292F8DE7A735805</string>
 			<key>IDESourceControlWCCName</key>
 			<string>iTrain</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>02CA20A543F00382E3495EF50B25419893902CA1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mysql-connector-c</string>
 		</dict>
 	</array>
 </dict>
